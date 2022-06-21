@@ -105,7 +105,7 @@
   width: 19px;
   height: 19px;
   margin-top: 3px;
-  }
+}
 
 .favorite {
   position: relative;
@@ -148,12 +148,24 @@
   border-radius: 4px;
 }
 
-.advantages-title {
+.welcome-text-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  width: 620px;
+  padding-top: 35px;
+  padding-bottom: 1px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.welcome-text-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
 }
 
 .welcome {
@@ -178,4 +190,159 @@
 .welcome-img {
   display: block;
   margin: 0 auto;
+}
+
+.welcome-text {
+  width: auto;
+  height: 282px;
+}
+
+.navigation-link-current::after {
+  /*Почему подчеркивание встало сразу на свое место?*/
+  content: "";
+  width: 68px;
+  height: 1px;
+  border: 1px solid #756257;
+  background: #756257;
+  display: block;
+
+}
+
+.hotel-search {
+  padding-top: 15px;
+  width: auto;
+  height: 417px;
+}
+
+.hotel-search-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.hotel-search-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+}
+
+.hotel-search-button {
+  width: 574px;
+  height: 60px;
+  border-radius: 4px;
+  background: #756157;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantages-item {
+  height: 384px;
+  display: block;
+}
+
+.subscribe {
+  display: block;
+  width: auto;
+  height: 411px;
+  background: blue url("../images/subscribe-background.jpg");
+  background-size: cover;
+}
+
+.subscribe-title {
+  /*Нужно ли ставить position?*/
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #FFFFFF;
+  padding-top: 80px;
+  margin-bottom: 49px;
+}
+
+.subscribe-text {
+  /*Нужно ли ставить position?*/
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+  width: 475px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 49px;
+}
+
+.subscribe-form {
+  /*Нужно ли ставить position?*/
+  display: flex;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.field {
+  width: 600px;
+  height: 60px;
+  border-radius: 10px 0px 0px 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  border-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button-subscribe {
+  width: 200px;
+  height: 60px;
+  border-radius: 0px 10px 10px 0px;
+  background: #82B3D3;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page-footer {
+  display: flex;
+  width: auto;
+  height: 120px;
+
+}
+
+.footer-social {
+  display: flex;
+  position: relative
+
+}
+
+.social-footer-link {
+  position: absolute;
+  display: flex;
+  background: url("../images/social-vk.svg") no-repeat center center;
+  z-index: 10;
 }
