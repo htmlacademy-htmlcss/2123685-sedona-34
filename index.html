@@ -5,18 +5,21 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
 </head>
 
 <body class="body">
   <div class="page-container">
     <header class="page-header">
-      <a class="logo-link" href="index.html">
+      <a class="logo-link">
         <img class="logo" src="./images/logo.svg" alt="Логотип 'City of Sedona'">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+            <a class="navigation-link navigation-link-current">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -177,6 +180,7 @@
           <a class="footer-contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </section>
         <section class="footer-academy">
+          <h2 class="visually-hidden">Информация о производителе</h2>
           <a class="footer-academy-link" href="https://htmlacademy.ru/">
             <span class="visually-hidden">Ссылка на сайт HTML-Academy</span>
             <svg class="academy-footer-logo" width="115" height="33" viewBox="0 0 115 33" fill="none"
@@ -214,29 +218,68 @@
 
 
   <!-- Модальное окно -->
-  <section class="search-window">
-    <div class="search-title-container">
-      <h1 class="search-window-title">Поиск гостиницы в Седоне</h1>
-      <button class="search-window-close"></button>
-    </div>
-    <form class="search-window-form" action="https://echo.htmlacademy.ru/" method="post">
-      <label class="search-form-label" for="search-date-check-in">Дата заезда:</label>
-      <input class="search-date" type="date" placeholder="27 апреля 2020" name="check-in-date"
-        id="search-date-check-in">
-      <p class="search-check-in-text">Мы не можем отправить вас в прошлое.</p>
-      <label class="search-form-label" for="search-date-check-out">Дата выезда:</label>
-      <input class="search-date date-check-out" type="date" placeholder="1 сентября 2021" name="check-out-date"
-        id="search-date-check-out">
-      <p class="search-check-out-text">На эти даты есть свободные номера. Пока есть.</p>
-      <label class="search-form-label" for="search-number-adults">Взрослые:</label>
-      <input class="search-number-adults" type="number" placeholder="2" name="adults-number" id="search-number-adults">
-      <label class="search-form-label" for="search-number-children">Дети:</label>
-      <input class="search-number-children" type="number" placeholder="1" name="children-number"
-        id="search-number-children">
-      <button class="search-window-button">Найти</button>
-    </form>
-  </section>
+  <div class="modal">
+    <section class="search-window">
+      <button class="search-window-close">
+        <span class="visually-hidden">Закрыть модальное окно</span>
+      </button>
 
+        <h2 class="search-window-title">Поиск гостиницы в Седоне</h2>
+
+      <form class="search-window-form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="field-group">
+          <label class="search-form-label" for="search-date-check-in">Дата заезда:</label>
+          <div class="field-wrapper">
+            <input class="search-date" type="text" placeholder="Укажите дату" value="27 апреля 2020"
+              name="check-in-date" id="search-date-check-in">
+            <p class="search-check-in-text">Мы не можем отправить вас в прошлое.</p>
+          </div>
+        </div>
+        <div class="field-group">
+          <label class="search-form-label" for="search-date-check-out">Дата выезда:</label>
+          <div class="field-wrapper">
+            <input class="search-date" type="text" placeholder="Укажите дату" value="1 сентября 2021"
+              name="check-out-date" id="search-date-check-out">
+            <p class="search-check-out-text">На эти даты есть свободные номера. Пока есть.</p>
+          </div>
+        </div>
+        <div class="field-group">
+          <div class="field-group-short">
+            <label class="search-form-label" for="search-number-adults">Взрослые:</label>
+            <div class="complex-input">
+              <button class="form-button form-button--decrease" type="button">
+                <span class="visually-hidden">Уменьшить количество на единицу</span>
+              </button>
+              <input class="search-number" type="text" placeholder="2" name="adults-number" id="search-number-adults">
+              <button class="form-button form-button--increase" type="button">
+                <span class="visually-hidden">Увеличить количество на единицу</span>
+              </button>
+            </div>
+          </div>
+          <div class="field-group-short field-group-short--child">
+            <label class="search-form-label" for="search-number-children">Дети:</label>
+            <div class="info-container">
+              <a href="" class="info-link">i</a>
+              <div class="info-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
+                Дети до 6 лет размещаются бесплатно.</div>
+            </div>
+            <div class="complex-input">
+              <button class="form-button form-button--decrease" type="button">
+                <span class="visually-hidden">Уменьшить количество на единицу</span>
+              </button>
+              <input class="search-number" type="text" placeholder="1" name="children-number"
+                id="search-number-children">
+              <button class="form-button form-button--increase" type="button">
+                <span class="visually-hidden">Увеличить количество на единицу</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <button class="search-window-button" type="submit">Найти</button>
+      </form>
+    </section>
+  </div>
+<script src="./javascript/script.js"></script>
 </body>
 
 </html>

@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
 </head>
 
 <body class="body">
@@ -22,7 +25,7 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link navigation-link-current">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-right">
@@ -51,23 +54,18 @@
       <section class="main-inner-head">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <section class="breadcrumbs">
+          <h2 class="visually-hidden">Хлебные крошки</h2>
           <ul class="breadcrumbs-list">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">
-                <img src="./images/breadcrumbs-home.svg" alt="На главную">
-              </a>
+              <a class="breadcrumbs-link breadcrumbs-link--home" href="index.html" aria-label="Перейти на главную страницу"></a>
             </li>
-            <li class="breadcrumbs-item breadcrumbs-item--arrow">
-              <img src="./images/breadcrumbs-arrow.svg">
-            </li>
-            <li class="breadcrumbs-item breadcrumbs-item--page">
-              <a class="breadcrumbs-link" href="catalog.html">
-                Гостиницы
-              </a>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link">Гостиницы</a>
             </li>
           </ul>
         </section>
         <section class="filter">
+          <h2 class="visually-hidden">Параметры выбора гостиницы</h2>
           <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="form-container">
               <fieldset class="catalog-filter-group group-checkboxes">
@@ -200,7 +198,7 @@
                   избранном</button>
               </div>
               <div class="hotel-rating">
-                <img class="hotel-rating-stars" src="./images/Star.svg" alt="Класс отеля 4 звезды">
+                <div class="hotel-rating-stars hotel-rating-stars--four"></div>
                 <span class="hotel-rating-text">Рейтинг: 9,2</span>
               </div>
             </li>
@@ -220,7 +218,7 @@
                 <button class="hotel-card-button button-favorites" type="button">В избранное</button>
               </div>
               <div class="hotel-rating">
-                <img class="hotel-rating-stars" src="./images/Star.svg" alt="Класс отеля 3 звезды">
+                <div class="hotel-rating-stars hotel-rating-stars--three"></div>
                 <span class="hotel-rating-text">Рейтинг: 6,9</span>
               </div>
             </li>
@@ -240,7 +238,7 @@
                 <button class="hotel-card-button button-favorites" type="button">В избранное</button>
               </div>
               <div class="hotel-rating">
-                <img class="hotel-rating-stars" src="./images/Star.svg" alt="Класс отеля 1 звезда">
+                <div class="hotel-rating-stars hotel-rating-stars--one"></div>
                 <span class="hotel-rating-text">Рейтинг: 5,0</span>
               </div>
             </li>
@@ -337,6 +335,7 @@
           <a class="footer-contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </section>
         <section class="footer-academy">
+          <h2 class="visually-hidden">Информация о производителе</h2>
           <a class="footer-academy-link" href="https://htmlacademy.ru/">
             <span class="visually-hidden">Ссылка на сайт HTML-Academy</span>
             <svg class="academy-footer-logo" width="115" height="33" viewBox="0 0 115 33" fill="none"
