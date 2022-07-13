@@ -149,6 +149,20 @@
   border-radius: 4px;
 }
 
+.wish-button:hover {
+  background: #615048;
+}
+
+.wish-button:focus {
+  background: #615048;
+  outline: none;
+}
+
+.wish-button:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .welcome-text-title {
   padding: 0;
   margin: 0;
@@ -864,6 +878,19 @@
   display: block;
 }
 
+.checkbox-label:hover::before {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.checkbox-label:focus::before {
+  background: rgba(255, 255, 255, 0.6);
+  border: 3px solid #83B3D3;
+}
+
+.checkbox-label:active::before {
+  background: rgba(255, 255, 255, 0.3);
+}
+
 .radiobutton-label {
   font-weight: 400;
   font-size: 18px;
@@ -903,6 +930,10 @@
   display: block;
 }
 
+.radiobutton-label:focus::before {
+  border: 3px solid #83B3D3;
+}
+
 .button-filter-submit {
   padding: 0;
   margin: 0;
@@ -922,6 +953,21 @@
   font-family: "PT Sans", "Arial", sans-serif;
 }
 
+.button-filter-submit:hover {
+  background: #68A2CA;
+  cursor: pointer;
+}
+
+.button-filter-submit:focus {
+  background: #68A2CA;
+  outline: none;
+}
+
+.button-filter-submit:active {
+  background: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button-filter-reset {
   padding: 0;
   margin: 0;
@@ -934,6 +980,20 @@
   margin-left: 33px;
   margin-top: 20px;
   font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.button-filter-reset:hover {
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.button-filter-reset:focus {
+  border: 3px solid #83B3D3;
+  outline: none;
+}
+
+.button-filter-reset:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .filter-buttons {
@@ -982,6 +1042,19 @@
   border-radius: 0 4px 4px 0;
 }
 
+.range-input:hover {
+  border: 2px solid #ffffff;
+}
+
+.range-input:focus {
+  box-shadow: 0px 0px 0px 3px #81B3D2;
+  outline: none;
+}
+
+.range-input:active {
+  background: #756257;
+}
+
 .range-container {
   position: relative;
   width: 287px;
@@ -1015,6 +1088,21 @@
   border-radius: 5px;
   top: -13px;
   left: 0;
+}
+
+.handle:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.handle:focus {
+  border: 3px solid #83B3D3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  outline: none;
+}
+
+.handle:active {
+  border: 2px solid #83B3D3;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
 }
 
 .handle-min-price {
@@ -1320,6 +1408,24 @@
 .pages-link-current {
   background: #F2F2F2;
   color: #000000;
+}
+
+.pages-link-current:focus {
+  outline: none;
+}
+
+.pages-link-noncurrent:hover {
+  background: #68A2CA;
+}
+
+.pages-link-noncurrent:focus {
+  background: #68A2CA;
+  outline: none;
+}
+
+.pages-link-noncurrent:active {
+  background: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-text {
