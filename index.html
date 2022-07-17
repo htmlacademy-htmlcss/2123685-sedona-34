@@ -14,7 +14,7 @@
   <div class="page-container">
     <header class="page-header">
       <a class="logo-link">
-        <img class="logo" src="./images/logo.svg" width="139" height="70" alt="Логотип 'City of Sedona'">
+        <img class="logo" src="./images/logo.svg" width="139" height="70" alt="Логотип 'City of Sedona.'">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -53,7 +53,7 @@
     <main class="main-index">
       <section class="welcome">
         <h1 class="visually-hidden">Неофициальный сайт города Седона</h1>
-        <img src="./images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeus Sedona" class="welcome-img">
+        <img src="./images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeus Sedona." class="welcome-img">
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
@@ -61,13 +61,13 @@
         <p class="welcome-text-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="advantages-list">
           <li class="advantages-item advantages-item--special advantages-item--special-first">
-            <div class="advantages-special-container">
-              <img class="advantages-image-one" width="800" height="384" src="./images/advantage-one.jpg" alt="Седона-настоящий городок">
+            <div class="advantages-special-container">              
               <div class="advantages-special-wrapper">
                 <h3 class="advantages-item-title">Настоящий городок</h3>
                 <p class="advantages-number">— №1 —</p>
                 <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
+              <img class="advantages-image-one" width="800" height="384" src="./images/advantage-one.jpg" alt="Седона-настоящий городок.">
             </div>
             <ul class="advantages-sublist">
               <li class="advantages-sublist-item advantages-accomodation">
@@ -92,7 +92,7 @@
           </li>
           <li class="advantages-item advantages-item--special advantages-item--special-second">
             <div class="advantages-special-container">
-              <img class="advantages-image-two" width="800" height="384" src="./images/advantage-two.jpg" alt="Мост дьявола в Седоне">
+              <img class="advantages-image-two" width="800" height="384" src="./images/advantage-two.jpg" alt="Мост дьявола в Седоне.">
               <div class="advantages-special-wrapper">
                 <h3 class="advantages-item-title">Там есть <br>мост дьявола</h3>
                 <p class="advantages-number">— №2 —</p>
@@ -122,7 +122,7 @@
         <p class="hotel-search-text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
           гостиниц в Седоне&nbsp;
         </p>
-        <a href="#" class="hotel-search-button">Поиск гостиницы в Седоне</a>
+        <a href="#" class="hotel-search-button" disabled>Поиск гостиницы в Седоне</a>
       </section>
     </main>
     <footer class="page-footer">
@@ -229,16 +229,14 @@
         <div class="field-group">
           <label class="search-form-label" for="search-date-check-in">Дата заезда:</label>
           <div class="field-wrapper">
-            <input class="search-date" type="text" placeholder="27 апреля 2020"
-              name="check-in-date" id="search-date-check-in">
+            <input class="search-date" type="text" placeholder="27 апреля 2020" name="check-in-date" id="search-date-check-in" required>
             <p class="search-check-in-text">Мы не можем отправить вас в прошлое.</p>
           </div>
         </div>
         <div class="field-group">
           <label class="search-form-label" for="search-date-check-out">Дата выезда:</label>
           <div class="field-wrapper">
-            <input class="search-date" type="text" placeholder="1 сентября 2021"
-              name="check-out-date" id="search-date-check-out">
+            <input class="search-date" type="text" placeholder="1 сентября 2021" name="check-out-date" id="search-date-check-out" required>
             <p class="search-check-out-text">На эти даты есть свободные номера. Пока есть.</p>
           </div>
         </div>
@@ -249,7 +247,7 @@
               <button class="form-button form-button--decrease" type="button">
                 <span class="visually-hidden">Уменьшить количество на единицу</span>
               </button>
-              <input class="search-number" type="text" placeholder="2" name="adults-number" id="search-number-adults">
+              <input class="search-number" type="number" placeholder="2" name="adults-number" id="search-number-adults" required min="0">
               <button class="form-button form-button--increase" type="button">
                 <span class="visually-hidden">Увеличить количество на единицу</span>
               </button>
@@ -266,8 +264,7 @@
               <button class="form-button form-button--decrease" type="button">
                 <span class="visually-hidden">Уменьшить количество на единицу</span>
               </button>
-              <input class="search-number" type="text" placeholder="1" name="children-number"
-                id="search-number-children">
+              <input class="search-number" type="number" placeholder="1" name="children-number" id="search-number-children" required min="0">
               <button class="form-button form-button--increase" type="button">
                 <span class="visually-hidden">Увеличить количество на единицу</span>
               </button>
