@@ -14,7 +14,7 @@
   <div class="page-container">
     <header class="page-header">
       <a class="logo-link" href="index.html">
-        <img class="logo" src="./images/logo.svg" width="139" height="70" alt="Логотип 'City of Sedona'">
+        <img class="logo" src="./images/logo.svg" width="139" height="70" alt="Логотип 'City of Sedona'.">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -58,7 +58,7 @@
           <ul class="breadcrumbs-list">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link breadcrumbs-link--home" href="index.html"
-                aria-label="Перейти на главную страницу"></a>
+                aria-label="Перейти на главную страницу."></a>
             </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link">Гостиницы</a>
@@ -122,9 +122,10 @@
                 </div>
                 <div class="range-container">
                   <div class="range-scale">
-                    <div class="range"></div>
-                    <button class="handle handle-min-price" aria-label="Установить минимальную цену"></button>
-                    <button class="handle handle-max-price" aria-label="Установить максимальную цену"></button>
+                    <div class="range">
+                      <button class="handle handle-min-price" aria-label="Установить минимальную цену."></button>
+                      <button class="handle handle-max-price" aria-label="Установить максимальную цену."></button>
+                    </div>
                   </div>
                 </div>
               </fieldset>
@@ -141,14 +142,12 @@
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <section class="catalog-sort">
           <h2 class="catalog-sort-title">Найдено гостиниц: 38</h2>
-          <div class="select-wrapper">
-            <select class="select-control" aria-label="Сортировка">
-              <option value="cheap">Сначала дешевые</option>
-              <option value="expensive">Сначала дорогие</option>
-            </select>
-          </div>
+          <select class="select-control" aria-label="Сортировка.">
+            <option value="cheap">Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
           <div class="buttons-sort-wrapper">
-            <button class="button-catalog-sort button-sort-table">
+            <button class="button-catalog-sort button-catalog-sort--active button-sort-table">
               <span class="visually-hidden">Таблица</span>
             </button>
             <button class="button-catalog-sort button-sort-slideshow">
@@ -166,7 +165,7 @@
             <li class="hotel-card">
               <a class="hotel-card-link" href="#">
                 <img class="product-card-image" src="./images/hotel-amara-resort-spa.jpg" width="300" height="211"
-                  alt="">
+                  alt="Amara Resort & Spa.">
               </a>
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
               <div class="price-container">
@@ -187,8 +186,7 @@
 
             <li class="hotel-card">
               <a class="hotel-card-link" href="#">
-                <img class="product-card-image" src="./images/hotel-villas.jpg" width="300" height="211"
-                  alt="">
+                <img class="product-card-image" src="./images/hotel-villas.jpg" width="300" height="211" alt="Villas at Poco Diablo.">
               </a>
               <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
               <div class="price-container">
@@ -210,8 +208,7 @@
 
             <li class="hotel-card">
               <a class="hotel-card-link" href="#">
-                <img class="product-card-image" src="./images/hotel-desert.jpg" width="300" height="211"
-                  alt="">
+                <img class="product-card-image" src="./images/hotel-desert.jpg" width="300" height="211" alt="Desert Quail Inn.">
               </a>
               <h3 class="hotel-card-title">Desert Quail Inn</h3>
               <div class="price-container">
@@ -232,8 +229,7 @@
 
             <li class="hotel-card">
               <a class="hotel-card-link" href="#">
-                <img class="product-card-image" src="./images/hotel-greentree.jpg" width="300" height="211"
-                  alt="">
+                <img class="product-card-image" src="./images/hotel-greentree.jpg" width="300" height="211" alt="GreenTree Inn.">
               </a>
               <h3 class="hotel-card-title">GreenTree Inn</h3>
               <div class="price-container">
@@ -245,7 +241,9 @@
                 <button class="hotel-card-button button-favorites" type="button">В избранное</button>
               </div>
               <div class="hotel-rating">
-                <div class="hotel-rating-stars hotel-rating-stars--one"></div>
+                <div class="hotel-rating-stars hotel-rating-stars--one">
+                  <span class="visually-hidden">1 звезда</span>
+                </div>
                 <span class="hotel-rating-text">Рейтинг: 5,0</span>
               </div>
             </li>
@@ -274,14 +272,13 @@
             </li>
           </ul>
           <span class="pagination-text">Гостиниц на странице:</span>
-          <div class="select-number-wrapper">
-            <select class="select-number">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4" selected>4</option>
-            </select>
-          </div>
+          <select class="select-number">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4" selected>4</option>
+          </select>
+
         </section>
 
       </section>
